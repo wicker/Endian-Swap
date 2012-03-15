@@ -1,0 +1,8 @@
+# Endian Swap
+
+An assembly program that uses a stack to receive a Big Endian packet and provide it in Little Endian order. Images are Cygwin Insight.  
+
+ARM/XScale Assembly language program to perform operations on a 52-byte  packet. The first four header bytes are added and the sum compared to  the fifth header byte; if equal, the remaining 48 bytes (written in Big- Endian MSB order) are shuffled so that they are ready to be transferred  on in Little Endian LSB order. The actual receipt and transfer of the packet is ignored. 
+
+Written by Jen Hanni, Winter 2011. 
+See the LICENSE file for copyright details.
