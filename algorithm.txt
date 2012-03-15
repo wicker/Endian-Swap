@@ -1,0 +1,29 @@
+Accompanying Algorithm for the ARM Assembly File 'endianswap.s'
+Written by Jen 'wicker' Hanni, 2011
+
+===============================================================
+
+Initialize R0 with loop counter (4) for the sum operation 
+Initalize R1 with pointer to HEADER array 
+Initalize R4 with pointer to CHECKSUM array 
+
+Load byte from R1 into R2, increment pointer in R1 by one 
+
+The loop for HEADER starts here--> 
+
+	Add next byte from R1 to R3, increment R1 by one 
+	Add R2 and R3, put result in R2, which is safely outside the loop 
+	Decrement the counter 
+	Go back to top of loop 
+
+Mainline continues by loading checksum value in R4 into R3 
+Test the sum in R2 with checksum in R3 
+If R3 != R2, ignore
+Else, call BYTES subroutine 
+
+	Get a byte from BYTESOLD array 
+	*increment* the BYTESOLD pointer 
+	Put that byte into the BYTESNEW array 
+	*decrement* the BYTESNEW pointer 
+	Decrement the loop counter by one 
+	Repeat until done
