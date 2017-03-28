@@ -6,6 +6,13 @@ ARM/XScale Assembly language program to perform operations on a 52-byte  packet.
 
 Warning: this is coursework released under the "New" BSD license. The course in question requires a signed statement of solo work. If you use my code without attribution, you're not only cheating but in violation of my copright.
 
-Written by Jen Hanni, Winter 2011. 
+Written by Jenner Hanni, Winter 2011. 
 See the LICENSE file for copyright details.
+
+<img src="memorydump1-initialization.png">
+
+<img src="memorydump2-reorderbytes.png">
+
+<img src="memorydump3-littleendianresult.png">
+
 
